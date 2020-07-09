@@ -32,7 +32,7 @@
         /* \Typography\ */
         --font-xxlg: 4.5rem;
         --font-lg: 3.1rem;
-        --font-md: 2rem;
+        --font-md: 1.9rem;
         --font-sm: 1.6rem;
         --font-xxsm: 1.2rem;
         /* --font-xxxsm: 1.2rem; */
@@ -134,7 +134,7 @@
     }
     
     .container {
-        width: 90%;
+        width: 95%;
         max-width: 1240px;
         margin: 0 auto;
     }
@@ -271,6 +271,7 @@
         font-weight: initial;
         font-size: var(--font-lg);
         color: var(--dark-blue);
+        white-space: nowrap;
     }
     
     .services__paragraph {
