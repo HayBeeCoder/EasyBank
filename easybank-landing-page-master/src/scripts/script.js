@@ -5,17 +5,16 @@ const overlay = document.getElementById('overlay')
 
 
 menu_open.addEventListener('click', () => {
-    mobile_menu.classList.add('navbar--display');
+    mobile_menu.style.display = 'block';
+    mobile_menu.style.animation = `zoomMenu 0.4s ease-in`
     menu_open.classList.add('header__menu-display--none')
     menu_close.classList.remove('header__menu-display--none');
     document.body.style.overflowY = 'hidden'
     overlay.style.display = 'block';
-    // document.body.style.top =`-${window.SrollY}px`
-
 })
 
 menu_close.addEventListener('click', () => {
-    mobile_menu.classList.remove('navbar--display');
+    mobile_menu.style.display = "none";
     menu_open.classList.remove('header__menu-display--none')
     menu_close.classList.add('header__menu-display--none');
     document.body.style.overflowY = 'scroll'

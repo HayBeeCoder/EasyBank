@@ -157,15 +157,16 @@
         display: none;
     }
     
-    .navbar--display {
-        transition: all 600 ease-in;
-        display: block;
-    }
-    
     .header__menu-open {
         transition: all 600 ease-in;
         cursor: pointer;
         display: block;
+    }
+    
+    @keyframes zoomMenu {
+        0% {
+            transform: translate3d(-50%, -100%, 0);
+        }
     }
     
     .header__menu-open:hover,
@@ -214,6 +215,10 @@
     .navbar__link:hover,
     .navbar__focus {
         color: var(--lime-green);
+    }
+    
+    .navbar__logo-link {
+        display: flex;
     }
     /* ================================= */
     /* Hero  */
@@ -458,6 +463,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
             grid-gap: .5rem;
+            justify-content: center;
         }
         .article__list {
             display: grid;
