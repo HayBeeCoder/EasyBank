@@ -20,3 +20,6 @@ menu_close.addEventListener('click', () => {
     document.body.style.overflowY = 'scroll'
     overlay.style.display = 'none';
 })
+
+const allLinks = document.querySelectorAll("a")
+for (let element of Array.from(allLinks)) { element.addEventListener("click", (event) => event.preventDefault()) }
